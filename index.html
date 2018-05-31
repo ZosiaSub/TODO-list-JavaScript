@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My todo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<div id="container">
+    <div id="user-name">Z</div>
+    <h1>My TODOS</h1>
+    <form>
+        <div class="input-group mb-3">
+            <input id="add-new-element" type="text" class="form-control" placeholder="Add TODO" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button id="add-button" class="btn btn-outline-info" type="button">Submit</button>
+            </div>
+        </div>
+    </form>
+    <div id="list">
+        <ul id="todo-list" class="list-group list-group-flush">
+        </ul>
+    </div>
+</div>
+
+<div id="cookieAcceptBar" class="cookieAcceptBar">
+    This website uses cookies to ensure you get the best experience on our website<br> <button id="cookieAcceptBarConfirm" class="btn btn-info">OK!</button>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDVC0nsP7yyieYMqx_3lhN2szd0H9V6C0I",
+        authDomain: "testproject-3b5e8.firebaseapp.com",
+        databaseURL: "https://testproject-3b5e8.firebaseio.com",
+        projectId: "testproject-3b5e8",
+        storageBucket: "testproject-3b5e8.appspot.com",
+        messagingSenderId: "548110702128"
+    };
+    firebase.initializeApp(config);
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="JS/cookies.js"></script>
+<script src="JS/todoList.js"></script>
+<script src="JS/app.js"></script>
+
+</body>
+</html>
